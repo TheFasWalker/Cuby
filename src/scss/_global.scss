@@ -251,9 +251,9 @@ img{
     align-items: center;
     padding: 10px;
     text-transform: uppercase;
+    color:#34333C;
     &:hover{
         color: #4C30F6;
-
     }
     &_chosen{
         &:after{
@@ -264,6 +264,12 @@ img{
             margin-left: 10px;
             background-image: url(../images/arrow.png);
         }
+    }
+    &_active{
+        background: var(--accent-gradient, linear-gradient(317deg, #4526DC 6.37%, #8066FF 93.57%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 .logo{
@@ -276,5 +282,9 @@ img{
     @media(max-width:1450px){
         width: 116px;
         height: 30px;
+    }
+    @media(max-width:900px){
+        width: 64px;
+        height: 16px;
     }
 }

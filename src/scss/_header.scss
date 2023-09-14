@@ -8,6 +8,10 @@
     z-index: 1;
     background-color: #F6F3FF;
     border-bottom: 1px solid #CDC5FF;
+    @media(max-width:900px){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 .header__container{
     display: flex;
@@ -33,7 +37,7 @@
     @media(max-width:1450px){
         margin-right: 50px;
     }
-    @media(max-width:1100px){
+    @media(max-width:1200px){
         display: none;
     }
 }

@@ -18,6 +18,9 @@
     @media(max-width:1850px){
         grid-template-columns: repeat(5, minmax(228px,1fr));
     }
+    @media(max-width:1450px){
+        padding-bottom: 120px;
+    }
     @media(max-width:1320px){
         grid-template-columns: repeat(5, minmax(220px,1fr));
     }
@@ -37,7 +40,11 @@
         "description description description"
         "icons1 teamPhoto smallSquare2"
         "womenPhoto icons2 doubleSquareVertical"
-        "smallSquare1 menPhoto doubleSquareVertical"
+        "smallSquare1 menPhoto doubleSquareVertical";
+        padding-bottom: 80px;
+    }
+    @media(max-width:640px){
+        padding-bottom: 60px;
     }
 }
 .hero__title{
