@@ -3,10 +3,12 @@
     margin: 0;
     text-decoration: none;
     list-style-type:none ;
+    transition: all .3s linear;
 }
 body{
     font-family: Raleway;
     background-color: #F6F3FF;
+
 }
 img{
     height: 100%;
@@ -150,6 +152,9 @@ img{
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
+    a{
+        text-decoration: underline;
+    }
     @media(max-width:1450px){
         font-size: 14px;
     }
@@ -178,7 +183,20 @@ img{
 
 }
 .social-link{
-
+    background: linear-gradient(317deg, #4526DC 6.37%, #8066FF 93.57%);;
+    display: block;
+    border-radius: 10px;
+    transition: background 1s linear;
+    height: 32px;
+    width: 32px;
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+    &:hover{
+        background:linear-gradient(0deg, rgba(52, 51, 60, 0.30) 0%, rgba(52, 51, 60, 0.30) 100%), linear-gradient(317deg, #4526DC 6.37%, #8066FF 93.57%);
+        transition: background 1s linear;
+    }
 }
 .menu-link{
     font-size: 18px;
@@ -189,5 +207,74 @@ img{
     font-variant-numeric: lining-nums proportional-nums;
     @media(max-width:900px){
         font-size: 16px;
+    }
+}
+.change-language__items{
+    //  display: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 4px 14px 0px rgba(124, 114, 139, 0.20);
+    background-color: #F6F3FF;
+    z-index: 2;
+    background-color: #F6F3FF;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 92%;
+    border-radius: 0 0 10px 10px;
+}
+.change-language__container{
+    border-radius: 10px;
+    position: relative;
+    &:hover{
+        box-shadow: 0px 4px 14px 0px rgba(124, 114, 139, 0.20);
+        border-radius: 10px 10px 0 0;
+        .change-language__items{
+            display: block;
+            max-height: fit-content;
+        }
+        .language-button_chosen::after{
+            transform: rotate(180deg);
+        }
+    }
+
+}
+.language-button{
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+    &:hover{
+        color: #4C30F6;
+
+    }
+    &_chosen{
+        &:after{
+            content: '';
+            display: block;
+            height: 16px;
+            width: 16px;
+            margin-left: 10px;
+            background-image: url(../images/arrow.png);
+        }
+    }
+}
+.logo{
+    width: 139px;
+    height: 36px;
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+    @media(max-width:1450px){
+        width: 116px;
+        height: 30px;
     }
 }
