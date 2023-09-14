@@ -1,0 +1,162 @@
+.hero{
+    padding-top: 195px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(320px,1fr));
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    grid-template-areas:
+    "title title doubleSquareVertical teamPhoto smallSquare2"
+    "icons1 menPhoto doubleSquareVertical doubleSquareHorizont doubleSquareHorizont"
+    "smallSquare1 icons2 womenPhoto description description";
+    div{
+        border-radius: 32px;
+        @media(max-width:1000px){
+            border-radius: 10px;
+        }
+    }
+    @media(max-width:1850px){
+        grid-template-columns: repeat(5, minmax(228px,1fr));
+    }
+    @media(max-width:1320px){
+        grid-template-columns: repeat(5, minmax(220px,1fr));
+    }
+    @media(max-width:1280px){
+        grid-gap: 6px;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "title icons1 teamPhoto smallSquare2"
+        "title womenPhoto icons2 doubleSquareVertical"
+        "description smallSquare1 menPhoto doubleSquareVertical";
+    }
+    @media(max-width:1000px){
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "title title title"
+        "description description description"
+        "icons1 teamPhoto smallSquare2"
+        "womenPhoto icons2 doubleSquareVertical"
+        "smallSquare1 menPhoto doubleSquareVertical"
+    }
+}
+.hero__title{
+    grid-area: title;
+    text-align: right;
+    @media(max-width:1280px){
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.hero__description{
+    grid-area: description;
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    @media(max-width:1000px){
+        padding: 0 0 20px 0;
+    }
+    p{
+        color: var(--Main-black, #34333C);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        max-width: 460px;
+        @media(max-width:1850px){
+            font-size: 24px;
+        }
+        @media(max-width:1000px){
+            max-width: 100%;
+            padding: 0 0 20px 0;
+        }
+    }
+}
+.hero__square-1{
+    grid-area: menPhoto;
+}
+.hero__square-2{
+    grid-area: womenPhoto;
+    background-color: red;
+}
+.hero__square-3{
+    grid-area: teamPhoto;
+    background-color: aquamarine;
+}
+.hero__square-4{
+    grid-area: icons1;
+    background-color: #FFAD00;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    img{
+        width: 161px;
+        height: 156px;
+        @media(max-width:1850px){
+            width: 114.722px;
+            height: 112.58px;
+        }
+        @media(max-width:1280px){
+            width: 65%;
+            height: 65%;
+        }
+    }
+}
+.hero__square-5{
+    grid-area: icons2;
+    background-color: #8066FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 214px;
+        height: 196px;
+        @media(max-width:1850px){
+            width: 154.475px;
+            height: 148.809px;
+        }
+        @media(max-width:1280px){
+            width: 65%;
+            height: 65%;
+        }
+    }
+
+}
+.hero__square-6{
+    grid-area: smallSquare1;
+}
+
+.hero__square-7{
+    grid-area: smallSquare2;
+    display: flex;
+    align-items: flex-end;
+    div{
+        margin-top: auto;
+        height: 50%;
+        width: 50%;
+        background-color: #CDC5FF;
+    }
+}
+.hero__square-8{
+    grid-area: doubleSquareHorizont;
+    @media(max-width:1280px){
+        display: none;
+    }
+}
+.hero__square-9{
+    grid-area: doubleSquareVertical;
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+}
+.hero__square-6_small{
+    background-color: #A9FBE0;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+}

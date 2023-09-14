@@ -1,0 +1,16 @@
+.footer{
+    width: 100%;
+}
+.footer__container{}
+.footer__top,
+.footer__bottom{
+    display: flex;
+}
+.footer__bottom{
+    .link{
+        margin-right: 40px;
+    }
+}
+.footer__polisy{
+    margin-left: auto;
+}
