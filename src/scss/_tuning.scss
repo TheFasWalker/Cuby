@@ -2,11 +2,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    padding-bottom: 150px;
     @media(max-width:1450px){
         grid-gap: 15px;
+        padding-bottom: 130px;
     }
     @media(max-width:900px){
         grid-gap: 10px;
+        padding-bottom: 80px;
+    }
+    @media(max-width:640px){
+        padding-bottom: 60px;
     }
 }
 .tuning__title{

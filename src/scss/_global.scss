@@ -323,3 +323,31 @@ img{
         padding-bottom: 40px;
     }
 }
+.description{
+    color: #34333C;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    @media(max-width:1450px){
+        font-size: 24px;
+    }
+    @media(max-width:900px){
+        font-size:16px
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form__input{}
+.form__input_name{}
+.form__input_tel{}
+.form__input_email{}
+// .{}
+// .{}
+// .{}
+// .{}
