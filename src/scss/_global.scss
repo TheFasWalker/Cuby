@@ -101,6 +101,21 @@ img{
         }
     }
 }
+.h3{
+    color: #4C30F6;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media(max-width:1450px){
+        font-size: 24px;
+    }
+    @media(max-width:900px){
+        font-size: 16px;
+    }
+
+}
 .email-link{
     font-family: Raleway;
     font-size: 20px;
@@ -286,5 +301,25 @@ img{
     @media(max-width:900px){
         width: 64px;
         height: 16px;
+    }
+}
+.colored-substrate{
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media(max-width:1450px){
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-radius: 80px;
+    }
+    @media(max-width:900px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 20px;
+    }
+    @media(max-width:640px){
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
