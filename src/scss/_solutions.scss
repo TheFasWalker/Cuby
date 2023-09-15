@@ -1,4 +1,15 @@
-.solutions{}
+.solutions{
+    padding-bottom: 150px;
+    @media(max-width:1450px){
+        padding-bottom: 120px;
+    }
+    @media(max-width:900px){
+        padding-bottom: 80px;
+    }
+    @media(max-width:640px){
+        padding-bottom: 60px;
+    }
+}
 .solutions__title{
     text-align: center;
     padding-bottom: 50px;
