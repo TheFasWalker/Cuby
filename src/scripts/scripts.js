@@ -39,5 +39,10 @@ function closeMobileMenu() {
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.js-header-mobile-menu-button').addEventListener('click', showMobileMenu);
     document.querySelector('.js-close-mobile-menu').addEventListener('click', closeMobileMenu);
-
+    const tuningSwiper = new Swiper('.js-tuning-swiper', {
+        slidesPerView: 1.1,
+        spaceBetween: 10,
+        loop:false,
+        centeredSlides:false
+    })
 });
