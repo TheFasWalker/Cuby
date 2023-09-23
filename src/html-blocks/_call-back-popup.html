@@ -1,0 +1,66 @@
+<div class="popup__wrapper popup-form">
+    <div class="popup__container">
+        <button class="button-zero popup__close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6289 3.37109L3.37065 16.6293M16.6289 16.6293L3.3706 3.37109" stroke="#34333C" stroke-width="2"/>
+            </svg>
+        </button>
+        <div class="popup__content">
+            <form class="form" action="#">
+                <h3 class="popup__title">Заявка на обратный звонок</h3>
+                <label class="form__input form__input_name">
+                    <input type="text" required name="userName" placeholder="Имя">
+                </label>
+                <label class="form__input form__input_tel">
+                    <input type="number"  required name="userPhone" placeholder="Телефон">
+                </label>
+                <label class="form__input form__input_email">
+                    <input type="email"   name="userEmail" placeholder="Email">
+                </label>
+                <textarea class="form__textarea" name="userMessage" placeholder="Сообщение (не обязательно)"></textarea>
+                <label class="form__confirm" >
+                    <input class="checkbox" type="checkbox" name="userConfirm" checked>
+                    <span class="fake-checkbox"></span>
+                    <span class="text">Я даю согласие на обработку персональных данных</span>
+                </label>
+                <button class="button-zero button-main callBack__button">Отправить</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="popup__wrapper popup-thanks">
+    <div class="popup__container">
+        <button class="button-zero popup__close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6289 3.37109L3.37065 16.6293M16.6289 16.6293L3.3706 3.37109" stroke="#34333C" stroke-width="2"/>
+            </svg>
+        </button>
+        <div class="popup__content">
+            <div class="popup-thanks__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                    <g clip-path="url(#clip0_64_807)">
+                      <path d="M70.0001 33.0126V37.1141C69.9443 37.604 69.8873 38.0951 69.8292 38.5873C68.9935 46.1068 66.1224 52.7377 61.0553 58.3619C55.6754 64.3314 49.0104 68.0587 41.079 69.4703C39.7648 69.7028 38.4335 69.8344 37.109 70.0138H33.0194C31.8505 69.8668 30.6747 69.7609 29.5126 69.5677C22.2169 68.3475 15.8595 65.2081 10.6266 59.9786C2.77721 52.1241 -0.683484 42.5863 0.326526 31.5463C0.999866 24.1344 3.90002 17.5856 8.85436 12.0194C15.4357 4.62976 23.7225 0.647824 33.5987 0.16589C40.4894 -0.175906 46.9681 1.43737 52.8658 5.03479C61.9337 10.5668 67.4982 18.5785 69.4567 29.046C69.701 30.3568 69.8224 31.6898 70.0001 33.0126ZM35.0565 6.89587C19.5321 6.90954 6.89073 19.5612 6.90612 35.0702C6.9215 50.5792 19.5697 63.2325 35.0753 63.2325C50.5809 63.2325 63.2325 50.5587 63.2325 35.0497C63.2325 19.5407 50.5621 6.88049 35.0565 6.89587Z" fill="url(#paint0_linear_64_807)"/>
+                      <path d="M17.0674 35.1743L21.7124 30.5396L30.4504 39.3066L47.1985 22.5586L51.9358 27.3438L30.5735 48.7061L17.0674 35.1743Z" fill="url(#paint1_linear_64_807)"/>
+                    </g>
+                    <defs>
+                      <linearGradient id="paint0_linear_64_807" x1="64.6275" y1="66.4295" x2="5.67544" y2="3.64955" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4526DC"/>
+                        <stop offset="1" stop-color="#8066FF"/>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_64_807" x1="49.2536" y1="47.3651" x2="28.4532" y2="17.8058" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4526DC"/>
+                        <stop offset="1" stop-color="#8066FF"/>
+                      </linearGradient>
+                      <clipPath id="clip0_64_807">
+                        <rect width="70" height="70" fill="white"/>
+                      </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h3 class="popup-thanks__title">Данные успешно отправлены!</h3>
+            <p class="popup-thanks__text text">Наши специалисты свяжутся с вами в ближайшее время</p>
+
+        </div>
+    </div>
+</div>

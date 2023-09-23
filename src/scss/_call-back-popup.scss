@@ -1,0 +1,138 @@
+.popup__wrapper{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(52, 51, 60, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup__container{
+    background-color: #E9E9FF;
+    border-radius: 30px;
+    max-width: 560px;
+    padding: 60px;
+    position: relative;
+    padding: 50px;
+
+}
+.popup__close-button{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.popup__content{}
+.popup__title{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #34333C;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media(max-width:1450px){
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+    @media(max-width:900px){
+        font-size: 30px;
+    }
+
+}
+@media(max-width:640px){
+    .popup-form{
+        .popup__container{
+            max-width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+            width: 100%;
+        }
+    }
+}
+
+.popup-thanks{
+    .popup__container{
+        max-width: 330px;
+    }
+    .popup__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+.popup-thanks__img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+    @media(max-width:900px){
+        height: 50px;
+        width: 50px;
+    }
+    @media(max-width:640px){
+        display: none;
+    }
+}
+.popup-thanks__title{
+    color:  #4C30F6;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
+    @media(max-width:1450px){
+        font-size: 30px;
+    }
+    @media(max-width:900px){
+        font-size: 24px;
+    }
+}
+.popup-thanks__text{
+    text-align: center;
+}
+
+
+
+
+@media(max-width:900px){
+    .popup-thanks{
+        align-items: flex-end;
+        .popup__container{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 30px 30px 0 0 ;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-form,
+.popup-thanks{
+    display: none;
+}
+
