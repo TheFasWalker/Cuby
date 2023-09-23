@@ -8,19 +8,19 @@
     <div class="callBack__form">
         <form class="form" action="#">
             <label class="form__input form__input_name">
-                <input type="text" required name="userName">
+                <input type="text" required name="userName" placeholder="Имя">
             </label>
             <label class="form__input form__input_tel">
-                <input type="number"  required name="userPhone">
+                <input type="number"  required name="userPhone" placeholder="Телефон">
             </label>
             <label class="form__input form__input_email">
-                <input type="email"   name="userPhone">
+                <input type="email"   name="userEmail" placeholder="Email">
             </label>
-            <textarea name="userMessage"></textarea>
-            <label >
-                <span></span>
+            <textarea class="form__textarea" name="userMessage" placeholder="Сообщение (не обязательно)"></textarea>
+            <label class="form__confirm" >
+                <input class="checkbox" type="checkbox" name="userConfirm" checked>
+                <span class="fake-checkbox"></span>
 
-                <input type="checkbox" name="" id="">
                 <span class="text">Я даю согласие на обработку персональных данных</span>
             </label>
             <button class="button-zero button-main callBack__button">Отправить</button>
@@ -28,3 +28,4 @@
     </div>
 
 </section>
+

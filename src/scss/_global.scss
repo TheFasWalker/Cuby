@@ -8,7 +8,7 @@
 body{
     font-family: Raleway;
     background-color: #F6F3FF;
-
+    textarea:focus, input:focus{ border: none; }
 }
 img{
     height: 100%;
@@ -343,11 +343,99 @@ img{
     flex-direction: column;
     justify-content: flex-start;
 }
-.form__input{}
+.form__input{
+    input{
+        border-radius: 10px;
+        background:#FFF;
+        border: none;
+        width: calc(100% - 40px);
+        padding: 15px 20px;
+        outline: none;
+        margin-bottom: 25px;
+
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input:placeholder{
+        color: #717177;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
 .form__input_name{}
 .form__input_tel{}
 .form__input_email{}
-// .{}
-// .{}
-// .{}
-// .{}
+.form__textarea{
+    border-radius: 10px;
+    background:#FFF;
+    border: none;
+    width: calc(100% - 40px);
+    padding: 15px 20px;
+    outline: none;
+    margin-bottom: 25px;
+    min-height: 133px;
+    resize: none;
+    &::placeholder{
+        color: #717177;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+.fake-checkbox{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before{
+        content: '';
+        display: block;
+        background-color: #4C30F6;
+        height: 12px;
+        width: 12px;
+        border-radius: 3px;
+        opacity: 0;
+        transition:opacity .5s linear;
+    }
+}
+.checkbox:checked ~ .fake-checkbox{
+    border: 1px solid #4C30F6;
+
+    &:before{
+        opacity: 1;
+        transition:opacity .5s linear;
+    }
+}
+.checkbox{
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    margin: -1px;
+    padding: 0px;
+}
+.form__confirm{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 25px;
+    align-items: center;
+    .text{
+        margin-left: 11px;
+    }
+}
