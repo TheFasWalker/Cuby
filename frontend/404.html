@@ -13,7 +13,7 @@
     <header class="header">
     <div class="container header__container">
         <div class="header__section-left">
-            <button class="header__mobile-menu button-zero">
+            <button class="header__mobile-menu button-zero js-header-mobile-menu-button">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -68,6 +68,7 @@
     </div>
 
 </header>
+<!-- @include('_mobile-menu.html') -->
     <div class="container error-404__container">
         <div class="error-404__content">
             <h1 class="h2 error-404__title">Ошибка 404</h1>
@@ -229,7 +230,7 @@
         </div>
     </div>
 </footer>
-<div class="popup__wrapper popup-form">
+<div class="popup__wrapper popup-form js-popup-form">
     <div class="popup__container">
         <button class="button-zero popup__close-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -260,7 +261,7 @@
         </div>
     </div>
 </div>
-<div class="popup__wrapper popup-thanks">
+<div class="popup__wrapper popup-thanks js-popup-thanks">
     <div class="popup__container">
         <button class="button-zero popup__close-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -301,7 +302,7 @@
     <div class="mobile-menu">
         <div class="container">
             <div class="mobile-menu__header">
-                <button class="button-zero mobile-menu_button">
+                <button class="button-zero mobile-menu_button js-close-mobile-menu">
                     <span></span>
                     <span></span>
                 </button>
