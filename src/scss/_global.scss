@@ -447,5 +447,11 @@ img{
             max-width:180px
         }
     }
+}
+.error{
+    input,
+    .fake-checkbox{
+        border: 1px solid red;
+    }
 
 }
